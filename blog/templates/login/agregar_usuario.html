@@ -1,0 +1,18 @@
+{% extends 'login/base.html' %}
+
+{% block title %}Agregar Usuario{% endblock %}
+
+{% block content %}
+  <h2>Nuevo Usuario</h2>
+<form action="/crear_usuario/" method="post">{% csrf_token %}
+<ul>
+
+{{ form.as_p }}
+
+</ul>
+
+<input class="btn btn-primary" type="submit" name="submit" value="Guardar">
+</form>
+<br>
+ <a href="/login">Regresar</a>
+{% endblock %}

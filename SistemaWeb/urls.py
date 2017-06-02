@@ -9,4 +9,5 @@ urlpatterns = [
 
     #view url, con esto automaticamente carga todas las url que asignemos en urls.py de cada modulo
     url(r'', include('blog.urls')),
+
 ]

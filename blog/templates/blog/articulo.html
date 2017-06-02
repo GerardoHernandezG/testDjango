@@ -23,4 +23,14 @@
   <hr />
 
 
+<h2>
+  Comentarios Disponibles
+</h2>
+
+{% for c in articulo.comentario_set.all %}
+  {{ c.nombre}}: {{c.cuerpo}}
+{% endfor %}
+
+<a href="agregar_comentario/{{ articulo.id }}/">Agregar Comentario</a>
+
 </div>
